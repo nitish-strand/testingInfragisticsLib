@@ -1,0 +1,17 @@
+C:\Users\nitish\source\repos\HeatMapInfragistics\TestInfragisticsLib\TestInfragisticsLib\obj\x64\Debug\App.g.cs
+C:\Users\nitish\source\repos\HeatMapInfragistics\TestInfragisticsLib\TestInfragisticsLib\obj\x64\Debug\TestInfragisticsLib_MarkupCompile.cache
+C:\Users\nitish\source\repos\HeatMapInfragistics\TestInfragisticsLib\TestInfragisticsLib\bin\x64\Debug\TestInfragisticsLib.exe.config
+C:\Users\nitish\source\repos\HeatMapInfragistics\TestInfragisticsLib\TestInfragisticsLib\bin\x64\Debug\TestInfragisticsLib.exe
+C:\Users\nitish\source\repos\HeatMapInfragistics\TestInfragisticsLib\TestInfragisticsLib\bin\x64\Debug\TestInfragisticsLib.pdb
+C:\Users\nitish\source\repos\HeatMapInfragistics\TestInfragisticsLib\TestInfragisticsLib\bin\x64\Debug\DataChart3D.dll
+C:\Users\nitish\source\repos\HeatMapInfragistics\TestInfragisticsLib\TestInfragisticsLib\obj\x64\Debug\MainWindow.g.cs
+C:\Users\nitish\source\repos\HeatMapInfragistics\TestInfragisticsLib\TestInfragisticsLib\obj\x64\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\nitish\source\repos\HeatMapInfragistics\TestInfragisticsLib\TestInfragisticsLib\obj\x64\Debug\TestInfragisticsLib_MarkupCompile.lref
+C:\Users\nitish\source\repos\HeatMapInfragistics\TestInfragisticsLib\TestInfragisticsLib\obj\x64\Debug\MainWindow.baml
+C:\Users\nitish\source\repos\HeatMapInfragistics\TestInfragisticsLib\TestInfragisticsLib\obj\x64\Debug\TestInfragisticsLib.g.resources
+C:\Users\nitish\source\repos\HeatMapInfragistics\TestInfragisticsLib\TestInfragisticsLib\obj\x64\Debug\TestInfragisticsLib.Properties.Resources.resources
+C:\Users\nitish\source\repos\HeatMapInfragistics\TestInfragisticsLib\TestInfragisticsLib\obj\x64\Debug\TestInfragisticsLib.csproj.GenerateResource.cache
+C:\Users\nitish\source\repos\HeatMapInfragistics\TestInfragisticsLib\TestInfragisticsLib\obj\x64\Debug\TestInfragisticsLib.csproj.CopyComplete
+C:\Users\nitish\source\repos\HeatMapInfragistics\TestInfragisticsLib\TestInfragisticsLib\obj\x64\Debug\TestInfragisticsLib.exe
+C:\Users\nitish\source\repos\HeatMapInfragistics\TestInfragisticsLib\TestInfragisticsLib\obj\x64\Debug\TestInfragisticsLib.pdb
+C:\Users\nitish\source\repos\HeatMapInfragistics\TestInfragisticsLib\TestInfragisticsLib\obj\x64\Debug\TestInfragisticsLib.csprojAssemblyReference.cache
