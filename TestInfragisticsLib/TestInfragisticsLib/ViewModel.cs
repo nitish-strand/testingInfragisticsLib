@@ -113,7 +113,8 @@ namespace TestInfragisticsLib
             Rows = rows;
             Cols = cols;
             refresh();
-            //colorHandle();
+            
+            colorHandle(); //without it also its breaking, earlier it was not.
         }
 
         #region SetColors Property
