@@ -1,0 +1,366 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Microsoft_Windows_Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero">
+	
+    <!-- ********************************** THEME COLORS **********************************-->
+    <!--Base Colors-->
+    <Color x:Key="Color_001">#FF3F3F3F</Color>
+    <Color x:Key="Color_002">#FF565656</Color>
+    <Color x:Key="Color_003">#FF858585</Color>
+    <Color x:Key="Color_004">#FFB9B9B9</Color>
+    <Color x:Key="Color_005">#FFD7D7D7</Color>
+    <Color x:Key="Color_006">#FFE7E7E7</Color>
+    <Color x:Key="Color_008">#FFF9F9F9</Color>
+    <Color x:Key="Color_009">#FFFFFFFF</Color>
+    <Color x:Key="Color_016">#00FFFFFF</Color>
+    <Color x:Key="Color_024">#FF00AADE</Color>		
+    <Color x:Key="Color_026">#FFAD0F31</Color>
+    <Color x:Key="Color_028">#FFD0284C</Color>
+    <Color x:Key="Color_046">#FFFCA910</Color>
+    <Color x:Key="Color_037">#FF8A9B0F</Color>
+    <Color x:Key="Color_038">#FF5D6A00</Color>
+    <Color x:Key="Color_071">#FFE00000</Color>
+    <Color x:Key="Color_072">#FFC06060</Color>
+    <Color x:Key="Color_073">Transparent</Color>
+    <Color x:Key="Color_074">#FF60C060</Color>
+    <Color x:Key="Color_075">#FF00E000</Color>
+			
+    <!-- *********************************  BRUSHES  ********************************* -->
+    <LinearGradientBrush x:Key="ApplicationBackgroundBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+    	<GradientStop Color="{DynamicResource Color_006}" Offset="1"/>
+    	<GradientStop Color="{DynamicResource Color_009}" Offset="0.664"/>
+    </LinearGradientBrush>	
+    <SolidColorBrush x:Key="ForegroundBrush" Color="{StaticResource Color_001}"/>
+    <SolidColorBrush x:Key="LighterForegroundBrush" Color="{DynamicResource Color_003}"/>	
+    <SolidColorBrush x:Key="TitleForegroundBrush" Color="{StaticResource Color_024}"/>
+    <SolidColorBrush x:Key="LightForegroundBrush" Color="{StaticResource Color_009}"/>
+    <SolidColorBrush x:Key="TransparentBrush" Color="{StaticResource Color_016}"/>
+	
+    <SolidColorBrush x:Key="TooltipBackgroundBrush" Color="{StaticResource Color_009}" Opacity="0.9"/>
+    <SolidColorBrush x:Key="TooltipBorderBrush" Color="{StaticResource Color_004}" Opacity="0.9"/>	
+    <SolidColorBrush x:Key="DisabledVisualElement" Color="{StaticResource Color_009}" Opacity="0.6"/>
+	
+	<!-- Heatmap Brushes -->  
+    <SolidColorBrush x:Key="HeatmapStroke" Color="{StaticResource Color_009}"/>
+    <SolidColorBrush x:Key="HighlightPathBackgroundBrush" Color="{StaticResource Color_024}" Opacity="0.2"/>
+    <SolidColorBrush x:Key="HighlightPathBorderBrush" Color="{StaticResource Color_024}"/>
+	
+  <!-- *********************************  TextBlock Style  ********************************* -->
+  <Style x:Key="TextBlockStyle" TargetType="TextBlock">
+    <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}" />
+    <Setter Property="FontSize" Value="14.667" />
+    <Setter Property="FontFamily" Value="Segoe UI" />
+  </Style>
+  	
+    <!-- Button Brushes -->
+    <SolidColorBrush x:Key="ButtonBackgroundBrush" Color="{StaticResource Color_008}"/>
+    <SolidColorBrush x:Key="ButtonBorderBrush" Color="{StaticResource Color_004}"/>
+    <SolidColorBrush x:Key="ButtonHoverBackgroundBrush" Color="{StaticResource Color_006}"/>
+    <SolidColorBrush x:Key="ButtonHoverBorderBrush" Color="{StaticResource Color_003}"/>
+    <SolidColorBrush x:Key="ButtonPressedBackgroundBrush" Color="{StaticResource Color_024}"/>
+    <SolidColorBrush x:Key="ButtonPressedBorderBrush" Color="{StaticResource Color_024}"/>
+	
+    <!--  Slider Thumb Brushes -->
+    <SolidColorBrush x:Key="SliderThumbBackgroundBrush" Color="{StaticResource Color_003}"/>
+    <SolidColorBrush x:Key="SliderThumbHoverBackgroundBrush" Color="{StaticResource Color_002}" />
+    <SolidColorBrush x:Key="SliderThumbPressedBackgroundBrush" Color="{StaticResource Color_024}"/>
+    <SolidColorBrush x:Key="SliderThumbFocusedBorderBrush" Color="{StaticResource Color_024}"/>
+	
+    <!--  Slider Brushes -->
+    <SolidColorBrush x:Key="SliderTrackBackgroundBrush" Color="{StaticResource Color_005}" />
+	
+	<!-- Slider Selection Range Brushes -->   
+    <SolidColorBrush x:Key="SliderSelectionRangeBackgroundBrush" Color="{StaticResource Color_024}"/>
+	
+    <!-- *********************************  App Margins  ********************************* -->	
+    <Thickness x:Key="LeftContainerMargins">30</Thickness>
+    <Thickness x:Key="RightContainerMargins">0,30,30,30</Thickness>
+		
+    <!-- *********************************  ToggleButtonStyle  ********************************* -->
+    <Style x:Key="ToggleButtonStyle" TargetType="ToggleButton">
+      <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
+      <Setter Property="FontSize" Value="14.667"/>
+      <Setter Property="FontFamily" Value="Segoe UI"/>
+      <Setter Property="Padding" Value="10,0,10,2"/>
+      <Setter Property="Margin" Value="0,0,0,12"/>
+      <Setter Property="MinHeight" Value="30"/>
+      <Setter Property="MinWidth" Value="30"/>
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="ToggleButton">
+            <Grid>
+              <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="CommonStates">
+                  <VisualState x:Name="Normal"/>
+                  <VisualState x:Name="MouseOver">
+                    <Storyboard>
+                      <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Bd" Storyboard.TargetProperty="Fill">
+                        <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonHoverBackgroundBrush}"/>
+                      </ObjectAnimationUsingKeyFrames>
+                      <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Bd" Storyboard.TargetProperty="Stroke">
+                        <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonHoverBorderBrush}"/>
+                      </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                  </VisualState>
+                  <VisualState x:Name="Pressed">
+                    <Storyboard>
+                      <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Bd" Storyboard.TargetProperty="Fill">
+                        <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonPressedBackgroundBrush}"/>
+                      </ObjectAnimationUsingKeyFrames>
+                      <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Bd" Storyboard.TargetProperty="Stroke">
+                        <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource ButtonPressedBorderBrush}"/>
+                      </ObjectAnimationUsingKeyFrames>
+                      <ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetProperty="Foreground" Storyboard.TargetName="ContentControl">
+                        <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource LightForegroundBrush}"/>
+                      </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                  </VisualState>
+                  <VisualState x:Name="Disabled">
+                    <Storyboard>
+                      <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="DisabledVisualElement">
+                        <DiscreteObjectKeyFrame KeyTime="0">
+                          <DiscreteObjectKeyFrame.Value>
+                            <Visibility>Visible</Visibility>
+                          </DiscreteObjectKeyFrame.Value>
+                        </DiscreteObjectKeyFrame>
+                      </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                  </VisualState>
+                </VisualStateGroup>
+                <VisualStateGroup x:Name="FocusStates">
+                  <VisualState x:Name="Focused">
+                    <Storyboard>
+                      <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="FocusedVisualElement">
+                        <DiscreteObjectKeyFrame KeyTime="0">
+                          <DiscreteObjectKeyFrame.Value>
+                            <Visibility>Visible</Visibility>
+                          </DiscreteObjectKeyFrame.Value>
+                        </DiscreteObjectKeyFrame>
+                      </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                  </VisualState>
+                  <VisualState x:Name="Unfocused"/>
+                </VisualStateGroup>
+              </VisualStateManager.VisualStateGroups>
+              <Rectangle x:Name="Bd" Fill="{StaticResource ButtonBackgroundBrush}" Stroke="{StaticResource ButtonBorderBrush}" StrokeThickness="1"/>
+              <ContentControl x:Name="ContentControl" Foreground="{TemplateBinding Foreground}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
+                <ContentPresenter x:Name="contentPresenter"/>
+              </ContentControl>
+              <Rectangle x:Name="FocusedVisualElement" Stroke="{StaticResource ButtonPressedBorderBrush}" Visibility="Collapsed" StrokeThickness="2"/>
+              <Rectangle x:Name="DisabledVisualElement" Fill="{StaticResource DisabledVisualElement}" Visibility="Collapsed"/>
+            </Grid>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+	
+    <!-- *********************************  SliderRepeatButton Style  ********************************* -->
+    <Style x:Key="SliderRepeatButtonStyle" TargetType="RepeatButton">
+        <Setter Property="OverridesDefaultStyle" Value="true"/>
+        <Setter Property="Focusable" Value="false"/>
+        <Setter Property="IsTabStop" Value="false"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RepeatButton">
+                    <Rectangle Fill="{StaticResource TransparentBrush}"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+	
+    <!-- *********************************  Slider Thumb Style  ********************************* -->	
+    <Style x:Key="SliderThumbStyle" TargetType="Thumb">
+      <Setter Property="Background" Value="{StaticResource SliderThumbBackgroundBrush}"/>
+      <Setter Property="BorderThickness" Value="1"/>
+      <Setter Property="IsTabStop" Value="False"/>
+      <Setter Property="MinHeight" Value="12"/>
+      <Setter Property="MinWidth" Value="8"/>
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="Thumb">
+            <Grid>
+              <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="CommonStates">
+                  <VisualState x:Name="Normal"/>
+                  <VisualState x:Name="MouseOver">
+                    <Storyboard>
+                      <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Thumb" Storyboard.TargetProperty="Fill">
+                        <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SliderThumbHoverBackgroundBrush}"/>
+                      </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                  </VisualState>
+                  <VisualState x:Name="Pressed">
+                    <Storyboard>
+                      <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Thumb" Storyboard.TargetProperty="Fill">
+                        <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SliderThumbPressedBackgroundBrush}"/>
+                      </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                  </VisualState>
+                  <VisualState x:Name="Disabled">
+                    <Storyboard>
+                      <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="DisabledVisualElement"/>
+                    </Storyboard>
+                  </VisualState>
+                </VisualStateGroup>
+                <VisualStateGroup x:Name="FocusStates">
+                  <VisualState x:Name="Unfocused"/>
+                  <VisualState x:Name="Focused">
+                    <Storyboard>
+                      <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="FocusedVisualElement"/>
+                    </Storyboard>
+                  </VisualState>
+                </VisualStateGroup>
+              </VisualStateManager.VisualStateGroups>
+              <Ellipse x:Name="Thumb" 
+                       Fill="{TemplateBinding Background}" 
+                       Width="16" Height="16"/>
+              <Ellipse x:Name="FocusedVisualElement" 
+                       Stroke="{StaticResource SliderThumbFocusedBorderBrush}" 
+                       Width="16" Height="16" 
+                       StrokeThickness="2" Opacity="0"/>
+              <Ellipse x:Name="DisabledVisualElement" 
+                       Fill="{StaticResource DisabledVisualElement}" 
+                       Width="16" Height="16" 
+                       Opacity="0"/>
+            </Grid>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+
+    <!-- *********************************  Slider Style  ********************************* -->
+    <Style x:Key="SliderStyle" TargetType="Slider">
+      <Setter Property="Stylus.IsPressAndHoldEnabled" Value="false"/>
+      <Setter Property="Background" Value="Transparent"/>
+      <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="Slider">
+            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="true">
+              <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="CommonStates">
+                  <VisualState x:Name="Normal"/>
+                  <VisualState x:Name="MouseOver"/>
+                  <VisualState x:Name="Disabled"/>
+                </VisualStateGroup>
+              </VisualStateManager.VisualStateGroups>
+              <Grid>
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="Auto"/>
+                  <RowDefinition Height="Auto" MinHeight="{TemplateBinding MinHeight}"/>
+                  <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TickBar x:Name="TopTick" Fill="{TemplateBinding Foreground}" Height="6" Placement="Top" Grid.Row="0" Visibility="Collapsed"/>
+                <TickBar x:Name="BottomTick" Fill="{TemplateBinding Foreground}" Height="6" Placement="Bottom" Grid.Row="2" Visibility="Collapsed"/>
+                <Border x:Name="TrackBackground" Background="{StaticResource SliderTrackBackgroundBrush}" Height="6" Grid.Row="1" VerticalAlignment="center" >
+                  <Canvas Margin="-6,-1">
+                    <Rectangle x:Name="PART_SelectionRange" Fill="{StaticResource SliderSelectionRangeBackgroundBrush}" Height="6"  Width="0" Visibility="Hidden"/>
+                  </Canvas>
+                </Border>
+                <Track x:Name="PART_Track" Grid.Row="1">
+                  <Track.DecreaseRepeatButton>
+                    <RepeatButton Command="{x:Static Slider.DecreaseLarge}" Style="{StaticResource SliderRepeatButtonStyle}"/>
+                  </Track.DecreaseRepeatButton>
+                  <Track.IncreaseRepeatButton>
+                    <RepeatButton Command="{x:Static Slider.IncreaseLarge}" Style="{StaticResource SliderRepeatButtonStyle}"/>
+                  </Track.IncreaseRepeatButton>
+                  <Track.Thumb>
+                    <Thumb x:Name="Thumb" Style="{StaticResource SliderThumbStyle}"/>
+                  </Track.Thumb>
+                </Track>
+              </Grid>
+            </Border>
+            <ControlTemplate.Triggers>
+              <Trigger Property="TickPlacement" Value="TopLeft">
+                <Setter Property="Visibility" TargetName="TopTick" Value="Visible"/>
+                <Setter Property="Style" TargetName="Thumb" Value="{StaticResource SliderThumbStyle}"/>
+                <Setter Property="Margin" TargetName="TrackBackground" Value="5,2,5,0"/>
+              </Trigger>
+              <Trigger Property="TickPlacement" Value="BottomRight">
+                <Setter Property="Visibility" TargetName="BottomTick" Value="Visible"/>
+                <Setter Property="Style" TargetName="Thumb" Value="{StaticResource SliderThumbStyle}"/>
+                <Setter Property="Margin" TargetName="TrackBackground" Value="5,0,5,2"/>
+              </Trigger>
+              <Trigger Property="TickPlacement" Value="Both">
+                <Setter Property="Visibility" TargetName="TopTick" Value="Visible"/>
+                <Setter Property="Visibility" TargetName="BottomTick" Value="Visible"/>
+              </Trigger>
+              <Trigger Property="IsSelectionRangeEnabled" Value="true">
+                <Setter Property="Visibility" TargetName="PART_SelectionRange" Value="Visible"/>
+              </Trigger>
+              <Trigger Property="IsKeyboardFocused" Value="true">
+                <Setter Property="Foreground" TargetName="Thumb" Value="{StaticResource SliderThumbFocusedBorderBrush}"/>
+              </Trigger>
+            </ControlTemplate.Triggers>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+      <Style.Triggers>
+        <Trigger Property="Orientation" Value="Vertical">
+          <Setter Property="Template">
+            <Setter.Value>
+              <ControlTemplate TargetType="Slider">
+                <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="true">
+                  <Grid>
+                    <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="Auto"/>
+                      <ColumnDefinition MinWidth="{TemplateBinding MinWidth}" Width="Auto"/>
+                      <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TickBar x:Name="TopTick" Grid.Column="0" Fill="{TemplateBinding Foreground}" Placement="Left" Visibility="Collapsed" Width="6"/>
+                    <TickBar x:Name="BottomTick" Grid.Column="2" Fill="{TemplateBinding Foreground}" Placement="Right" Visibility="Collapsed" Width="6"/>
+                    <Border x:Name="TrackBackground" Background="{StaticResource SliderTrackBackgroundBrush}" Grid.Column="1" HorizontalAlignment="center" Width="6">
+                      <Canvas Margin="-1,-6">
+                        <Rectangle x:Name="PART_SelectionRange" Fill="{StaticResource SliderSelectionRangeBackgroundBrush}" Visibility="Hidden" Width="6"/>
+                      </Canvas>
+                    </Border>
+                    <Track x:Name="PART_Track" Grid.Column="1">
+                      <Track.DecreaseRepeatButton>
+                        <RepeatButton Command="{x:Static Slider.DecreaseLarge}" Style="{StaticResource SliderRepeatButtonStyle}"/>
+                      </Track.DecreaseRepeatButton>
+                      <Track.IncreaseRepeatButton>
+                        <RepeatButton Command="{x:Static Slider.IncreaseLarge}" Style="{StaticResource SliderRepeatButtonStyle}"/>
+                      </Track.IncreaseRepeatButton>
+                      <Track.Thumb>
+                        <Thumb x:Name="Thumb" Style="{StaticResource SliderThumbStyle}"/>
+                      </Track.Thumb>
+                    </Track>
+                  </Grid>
+                </Border>
+                <ControlTemplate.Triggers>
+                  <Trigger Property="TickPlacement" Value="TopLeft">
+                    <Setter Property="Visibility" TargetName="TopTick" Value="Visible"/>
+                    <Setter Property="Style" TargetName="Thumb" Value="{StaticResource SliderThumbStyle}"/>
+                    <Setter Property="Margin" TargetName="TrackBackground" Value="2,5,0,5"/>
+                  </Trigger>
+                  <Trigger Property="TickPlacement" Value="BottomRight">
+                    <Setter Property="Visibility" TargetName="BottomTick" Value="Visible"/>
+                    <Setter Property="Style" TargetName="Thumb" Value="{StaticResource SliderThumbStyle}"/>
+                    <Setter Property="Margin" TargetName="TrackBackground" Value="0,5,2,5"/>
+                  </Trigger>
+                  <Trigger Property="TickPlacement" Value="Both">
+                    <Setter Property="Visibility" TargetName="TopTick" Value="Visible"/>
+                    <Setter Property="Visibility" TargetName="BottomTick" Value="Visible"/>
+                  </Trigger>
+                  <Trigger Property="IsSelectionRangeEnabled" Value="true">
+                    <Setter Property="Visibility" TargetName="PART_SelectionRange" Value="Visible"/>
+                  </Trigger>
+                  <Trigger Property="IsKeyboardFocused" Value="true">
+                    <Setter Property="Foreground" TargetName="Thumb" Value="{StaticResource SliderThumbFocusedBorderBrush}"/>
+                  </Trigger>
+                </ControlTemplate.Triggers>
+              </ControlTemplate>
+            </Setter.Value>
+          </Setter>
+        </Trigger>
+      </Style.Triggers>
+    </Style>
+	
+    <!-- *********************************  HighlightStyle  ********************************* -->
+    <Style x:Key="HighlightStyle" TargetType="{x:Type Path}">
+    	<Setter Property="Fill" Value="{StaticResource HighlightPathBackgroundBrush}"/>
+    	<Setter Property="Stroke" Value="{StaticResource HighlightPathBorderBrush}"/>
+    	<Setter Property="StrokeThickness" Value="1.5"/>
+    </Style>
+	
+</ResourceDictionary>

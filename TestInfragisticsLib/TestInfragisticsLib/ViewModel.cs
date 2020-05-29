@@ -92,8 +92,8 @@ namespace TestInfragisticsLib
             Data = data;
         }
 
-        private int rowcnt = 12;
-        private int colcnt = 10;
+        private int rowcnt = 32;
+        private int colcnt = 64;
         public ViewModel() 
         {
             List<string> rows = new List<string>();
